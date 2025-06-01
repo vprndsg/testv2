@@ -13,6 +13,14 @@
 <body>
   <canvas id="fluidCanvas"></canvas>
   <canvas id="threeCanvas"></canvas>
-  <script type="module" srcrc/main.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.164.0/build/three.module.js",
+        "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.164.0/examples/jsm/controls/OrbitControls.js"
+      }
+    }
+  </script>
+  <script type="module" src="./main.js"></script>>
 </body>
 </html>
